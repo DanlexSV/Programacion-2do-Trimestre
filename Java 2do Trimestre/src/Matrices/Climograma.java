@@ -8,7 +8,7 @@ public class Climograma {
 		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
 		int acum = 0, acum1 = 0, tem, pre;
-		String[][] clima = { { "Enero", "1", "100" }, { "Febrero", "2", "150" }, { "Marzo", "10", "100" },
+		String[][] clima = { { "Enero", "1	", "100" }, { "Febrero", "2", "150" }, { "Marzo", "10", "100" },
 				{ "Abril", "9", "160" }, { "Mayo", "21", "140" }, { "Junio", "22", "40" }, { "Julio", "30", "20" },
 				{ "Agosto", "35", "25" } };
 
