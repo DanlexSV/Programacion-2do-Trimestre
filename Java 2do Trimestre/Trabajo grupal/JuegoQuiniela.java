@@ -15,13 +15,17 @@ public class JuegoQuiniela {
 
 		while (!salir) {
 
+			System.out.println("A ~ Escribe los resultados de la tabla");
+			System.out.println("B ~ Escribe la apuesta del usuario");
+			System.out.println("C ~ Mostrar lo que ha ganado el usuario");
+			System.out.println("S ~ Salir");
 			System.out.println("Escribe una letra");
 
 			switch (sc.nextLine().toUpperCase()) {
 
 			case "A":
 				for (int fila = 0; fila < resultado.length; fila++) {
-					System.out.println("Escribe los resultados de este partido");
+					System.out.println("Escribe los resultados de la semana");
 					System.out.print(resultado[fila][0] + " = ");
 					resultado[fila][1] = sc.nextLine().toUpperCase();
 				}
@@ -58,10 +62,16 @@ public class JuegoQuiniela {
 						else
 							System.out.println("No has ganado nada.");
 					}
+					else
+						System.out.println("No has acertado nada.");
 				} else
 					System.out.println("No has pulsado A y/o B");
 				break;
 			case "S":
+				salir = true;
+				System.out.println("Saliendo del menu...");
+				break;
+			default:
 				salir = true;
 				System.out.println("Saliendo del menu...");
 				break;
