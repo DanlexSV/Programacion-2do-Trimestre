@@ -6,30 +6,27 @@ import javax.swing.*;
 public class Nombre_Telefono {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		String nombre = "", telefono = "";
-		FileWriter fw;
-		BufferedWriter bw = null;
 		escritura();
 	}
 
 	private static void escritura() {
-		String nombre;
-		String telefono;
-		FileWriter fw;
-		BufferedWriter bw;
+		String nombre = "", telefono = "";
+		FileWriter flw;
+		BufferedWriter fw;
 		try {
-			nombre = JOptionPane.showInputDialog("Escribe un nombre: ");
-			telefono = JOptionPane.showInputDialog("Escribe un telefono: ");
-			fw = new FileWriter("Agenda.txt", true);
-			bw = new BufferedWriter(fw);
-			bw.write(nombre + "," + telefono + "\n");
-			bw.close();
-		} catch (IOException e) {
-			JOptionPane.showInputDialog(null, e.getMessage());
+			flw = new FileWriter("Agenda.txt", true);
+			fw = new BufferedWriter(flw);
+			do {
+				nombre = JOptionPane.showInputDialog("Escribe un nombre: ");
+				if (nombre.length() > 0) {
+					telefono = JOptionPane.showInputDialog("Escribe un telefono: ");
+					fw.write(nombre + "," + telefono + "\n");
+				}
+			} while (nombre.length() > 0);
+			fw.close();
+			flw.close();
 		} catch (Exception e) {
-			JOptionPane.showInputDialog(null, e.getMessage());
+			JOptionPane.showMessageDialog(null, e.getMessage());
 		}
 	}
-
 }
