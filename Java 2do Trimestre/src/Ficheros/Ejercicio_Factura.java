@@ -13,7 +13,7 @@ public class Ejercicio_Factura {
 	private static void escritura() {
 		String producto = "", cantidad = "", precio = "";
 		FileWriter fw;
-		BufferedWriter bw;
+		BufferedWriter bw = null;
 		try {
 			fw = new FileWriter("factura.txt", true);
 			bw = new BufferedWriter(fw);
@@ -31,5 +31,4 @@ public class Ejercicio_Factura {
 			JOptionPane.showMessageDialog(null, e.getMessage());
 		}
 	}
-
 }

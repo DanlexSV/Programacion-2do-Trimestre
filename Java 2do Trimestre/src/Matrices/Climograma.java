@@ -1,12 +1,9 @@
 package Matrices;
 
-import java.util.*;
-
 public class Climograma {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Scanner sc = new Scanner(System.in);
 		int acum = 0, acum1 = 0, tem, pre;
 		String[][] clima = { { "Enero", "1", "100" }, { "Febrero", "2", "150" }, { "Marzo", "11", "100" },
 				{ "Abril", "9", "160" }, { "Mayo", "21", "140" }, { "Junio", "22", "40" }, { "Julio", "30", "20" },
