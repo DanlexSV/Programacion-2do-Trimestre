@@ -6,8 +6,6 @@ public class Promedio_Notas {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Scanner sc = new Scanner(System.in);
-
 		final int asig = 3;
 		final int alumn = 4;
 
@@ -19,13 +17,13 @@ public class Promedio_Notas {
 			for (int fila = 0; fila < notas.length; fila++) {
 				if (fila == 0) {
 					System.out.println("Escribe la nota del alumno" + (col + 1) + " en Matemáticas");
-					notas[fila][col] = sc.nextDouble();
+					notas[fila][col] = new Scanner(System.in).nextDouble();
 				} else if (fila == 1) {
 					System.out.println("Escribe la nota del alumno" + (col + 1) + " en Lengua");
-					notas[fila][col] = sc.nextDouble();
+					notas[fila][col] = new Scanner(System.in).nextDouble();
 				} else {
 					System.out.println("Escribe la nota del alumno" + (col + 1) + " en Geografía");
-					notas[fila][col] = sc.nextDouble();
+					notas[fila][col] = new Scanner(System.in).nextDouble();
 				}
 			}
 		for (int fila = 0; fila < notas.length; fila++) {

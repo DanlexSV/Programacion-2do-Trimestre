@@ -1,0 +1,4 @@
+Marcos: 7.5, 10, 8
+Lucas: 8, 7, 8
+Maria: 6, 5, 7
+Thomas: 4, 6, 10
