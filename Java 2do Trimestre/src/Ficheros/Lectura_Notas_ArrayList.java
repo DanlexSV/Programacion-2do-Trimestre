@@ -14,6 +14,22 @@ public class Lectura_Notas_ArrayList {
 		BufferedReader br = null;
 		String linea = "";
 		
+		try {
+			fr = new FileReader("notas.txt");
+			br = new BufferedReader(fr);
+			while (linea != null) {
+				linea = br.readLine();
+				if (linea != null)
+					notas.add(linea);
+			}
+			br.close();
+			fr.close();
+			for (String line:notas)
+				JOptionPane.showMessageDialog(null, line);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
 	}
 
 }
