@@ -24,8 +24,9 @@ public class Lectura_Notas_ArrayList {
 			}
 			br.close();
 			fr.close();
-			for (String line:notas)
-				JOptionPane.showMessageDialog(null, line);
+			if(notas.size() != 0)
+				for (String line:notas)
+					JOptionPane.showMessageDialog(null, line);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

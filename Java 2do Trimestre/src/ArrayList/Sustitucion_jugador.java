@@ -8,9 +8,8 @@ public class Sustitucion_jugador {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Scanner sc = new Scanner(System.in);
 		ArrayList<String> plantilla = new ArrayList<String>();
-		boolean salir = false, igual = false;
+		boolean salir = false;
 		while (!salir) {
 			System.out.println("Opcion 1 ~ Pedir los nombres de los jugadores convocados");
 			System.out.println("Opcion 2 ~ Buscar el numero de un jugador de la lista");
